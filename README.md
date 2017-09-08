@@ -6,4 +6,4 @@
 **University**:[The University of Texas at Austin](https://www.utexas.edu/)
 **level**:Undergraduate-Freshmen(1st year)
 **ICP Class Position**: Student
-**Course Page**: (http://www.shahmoradi.org/ICP2017F/)
+**Course Page**: http://www.shahmoradi.org/ICP2017F/
