@@ -7,3 +7,9 @@
 **level**:Undergraduate-Freshmen(1st year)
 **ICP Class Position**: Student
 **Course Page**: http://www.shahmoradi.org/ICP2017F/
+**Homework**
+**Quizzes**
+**Exam**
+
+Yash Kulkarni
+kulkarni.yash08@gmail.com
