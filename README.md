@@ -7,7 +7,7 @@
 **level**:Undergraduate-Freshmen(1st year)
 **ICP Class Position**: Student
 **Course Page**: http://www.shahmoradi.org/ICP2017F/
-ICP2017F/IMAG0182.jpg
+
 **Homework**:https://github.com/YashKulkarni07/ICP2017F/blob/master/Homework1
 **Quizzes**:https://github.com/YashKulkarni07/ICP2017F/blob/master/Quiz1
 **Exam**:https://github.com/YashKulkarni07/ICP2017F/blob/master/Test1
