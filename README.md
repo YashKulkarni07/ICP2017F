@@ -8,7 +8,7 @@
 **ICP Class Position**: Student
 **Course Page**: http://www.shahmoradi.org/ICP2017F/
 **Homework**:https://github.com/YashKulkarni07/ICP2017F/blob/master/Homework1
-**Quizzes**:
+**Quizzes**:https://github.com/YashKulkarni07/ICP2017F/blob/master/Quiz1
 **Exam**:
 
 Yash Kulkarni
