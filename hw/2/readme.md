@@ -27,28 +27,23 @@ int8(1/3) rounds down to 0
 10-6/2 is 7 because we divide the 6 by a 2 before subtracting it  
 5*4/2*3 is is 30 because we divide the 4 by the 2 and then multiply it by the 5 and 3 respectively.  
 Question 4a:
-a=[1,0;1,2]
-b=[-1,2;0,1]
-c=[3;2]
-d=[5]
+a=[1,0;2,1]  
+b=[-1,2;0,1]  
+c=[3;2]  
+d=[5]  
 Question 4b:
- a+b=[0,2;2,2] matlab is just adding a and b together.
- a.*b=[-1,0;0,1] matlab is just multiply a and b together
- a*b=
- 
-
-Question 5:  
-a=[2 2 2]  
-a=diag(a)  
-
-eye(3)*2
-
-zeros(3)+diag(a)
-Question 8:
-I get an error.This error is because myscript.m isn't defined in the new directory I am using.
-
-
-
-
-
-
+ a+b=[0,2;2,2] matlab is just adding a and b together.  
+ a.*b=[-1,0;0,1] matlab is just multiply a and b together  
+ a*b=[-1,2;-2,4] matlab is doing matrix multiplication  
+ a*c=[3;7] matlab is doing matrix multiplication  
+ a+c=[4,3;3,4] matlab is just adding the two values together  
+ a+d=[6,5;6,7] matlab is adding the two values together  
+ a*d=[5,0;5,10] matlab is doing multiplication  
+ a.*d=[5,0;5,10] matlab is doing matrix multiplication  
+Question 5:    
+a=[2 2 2]    
+a=diag(a)    
+eye(3)*2  
+zeros(3)+diag(a)  
+Question 8:  
+I get an error.This error is because myscript.m isn't defined in the new directory I am using.  
