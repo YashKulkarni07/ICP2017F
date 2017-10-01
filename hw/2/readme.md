@@ -26,8 +26,17 @@ int8(1/3) rounds down to 0
 (-5)^2 is 25 since both values of 5 are negative  
 10-6/2 is 7 because we divide the 6 by a 2 before subtracting it  
 5*4/2*3 is is 30 because we divide the 4 by the 2 and then multiply it by the 5 and 3 respectively.  
-Question 4a  
-Question 4b.  
+Question 4a:
+a=[1,0;1,2]
+b=[-1,2;0,1]
+c=[3;2]
+d=[5]
+Question 4b:
+ a+b=[0,2;2,2] matlab is just adding a and b together.
+ a.*b=[-1,0;0,1] matlab is just multiply a and b together
+ a*b=
+ 
+
 Question 5:  
 a=[2 2 2]  
 a=diag(a)  
@@ -35,7 +44,8 @@ a=diag(a)
 eye(3)*2
 
 zeros(3)+diag(a)
-Question 6:
+Question 8:
+I get an error.This error is because myscript.m isn't defined in the new directory I am using.
 
 
 
