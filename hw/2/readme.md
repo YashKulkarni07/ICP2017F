@@ -1,4 +1,4 @@
-Question 1:
+Question 1:  
 a=1 assigns the variable a to the value of 1 as a double value  
 b='x' assigns the variable b to the char x  
 c=true assigns the variable c to the number 1 and the logical function  
@@ -26,12 +26,12 @@ int8(1/3) rounds down to 0
 (-5)^2 is 25 since both values of 5 are negative  
 10-6/2 is 7 because we divide the 6 by a 2 before subtracting it  
 5*4/2*3 is is 30 because we divide the 4 by the 2 and then multiply it by the 5 and 3 respectively.  
-Question 4a:
+Question 4a:  
 a=[1,0;2,1]  
 b=[-1,2;0,1]  
 c=[3;2]  
 d=[5]  
-Question 4b:
+Question 4b:  
  a+b=[0,2;2,2] matlab is just adding a and b together.  
  a.*b=[-1,0;0,1] matlab is just multiply a and b together  
  a*b=[-1,2;-2,4] matlab is doing matrix multiplication  
