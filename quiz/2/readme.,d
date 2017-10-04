@@ -1,1 +1,26 @@
-This is the second quiz
+1a.Assembly Languages
+1b.No they don't.
+
+2a.Fortran
+2b.1950's
+
+3a.Cobol
+3b.3rd generation
+
+4. 1980's
+5. Cobol
+6. C
+7.C++
+f={a,b;c,d}
+a=[1,3,-7;2,0,6;0,5,1]
+b='This is a text string'
+c=[]
+d=int32([3+4i,-5;-10i,3-4i])
+
+
+
+
+
+10.row-wise
+11.64
+12.It would require matlab to generate the number in two parts
