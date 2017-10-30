@@ -13,7 +13,7 @@ end
 
 Question 3:  
 function Polarstruct=getPolar1(CartStruct)  
-if (isfield(Polarstruct,'r'||Polarstruct.phi)==(CartStruct.x,CartStruct.y);  
+if (isfield(Polarstruct,'r'))|| isfield(Polarstruct.phi)  
     Polarstruct.r=sqrt(CartStruct.x^2+CartStruct.y^2);  
     Polarstruct.phi=atan(CartStruct.y/CartStruct.x);  
 else   
@@ -21,7 +21,7 @@ else
 end  
 
 function CartStruct=getCart(Polarstruct)  
-if(isfield(CartStruct,'x'||CartStruct,'y')==(CartStruct.r,CartStruct.phi)  
+if(isfield(CartStruct,'x')||(isfield(CartStruct,'y'))  
   CartStruct.x=Polarstruct.r*cos*Polarstruct.phi  
   CartStruct.y=Polarstruct.r*sin*Polarstruct.phi  
   else   
@@ -64,24 +64,44 @@ function y = getFib(n_int)
     elseif(n_int==1)  
         y=1;  
     else  
-        y=getFib(n_int-1)+getFib(n_int-2);  
+        y=n+getFib(n_int-1)+getFib(n_int-2);  
     end     
 
 Question 6:  
 function area=getTriangleArea(vertices)  
-    node1=vertices{1};  
-    node2=vertices{2};  
-    node3=vertices{3};  
-    area=.5*(abs(x2y3-x3y2-x1y3+x3y1+x1y2-x2y1));  
+  if(isfield(vertices,'x'))&&(isfield(vertices,'y'))
+    node1=vertices{1}.x;  
+    node2=vertices{2}.x;  
+    node3=vertices{3}.x;
+    node1=vertices{1}.y;  
+    node2=vertices{2}.y;  
+    node3=vertices{3}.y;
+    area=.5*(abs(x2y3-x3y2-x1y3+x3y1+x1y2-x2y1));
+    else
+    disp('Error');
 end  
 
 Question 7:  
-function area=getTriangleArea(vertices)  
-    node1=vertices{1};  
-    node2=vertices{2};  
-    node3=vertices{3};  
-    area=.5*(abs(x2y3-x3y2-x1y3+x3y1+x1y2-x2y1));  
-end  
+function isPrime(m)
+n=m(1);
+if length(m)~=1
+    x=m(2:end);
+end
+x(1)=[2];
+if (n==1||n==0)
+    disp('true');
+end
+if x(end)==n
+    disp('true');
+return;
+end
+    if mod(n,x(end))==0
+        disp('false')   
+    else
+        x=[x,x(end)+1];
+        isPrime([n,x]);
+end 
+end 
 
 Question 8:  
 function n=genFunc(varargin)  
