@@ -90,4 +90,8 @@ function fib = getFib(n_int)
         end  
 end  
 
+Question 7c:  
+The fibloop() function has a faster run time and is more efficient when compared to the fib() function. The huge difference in performance is caused by the fact that for loops have to do less work while recursive functions have to do multiple things to get the final answer.  
+
+Question 8
  
