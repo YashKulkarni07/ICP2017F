@@ -56,4 +56,38 @@ function fib()
     end  
 end  
 
+Question 7b:  
+function fibLoop()    
+    n = input('Please enter a non-negative integer or type stop: ','s');  
+    if strcmp(n,'stop')  
+        return  
+    else  
+        n = str2double(n);  
+        if isreal(n)  
+            if n>=0 && round(n)==n  
+                disp(['fib(',num2str(n),') = ',num2str(getFib(n))]);  
+                fib()  
+                return  
+            end  
+        end  
+        disp('The input argument is not a non-negative integer!');  
+        fib()  
+    end  
+end  
+function fib = getFib(n_int)  
+        if n_int == 0  
+            fib = 0;  
+        elseif n_int==1  
+            fib=0;  
+        else   
+            fibOld1=0;  
+            fibOld2=1;  
+            for i=1:n_int-1  
+               fib=fibOld1+fibOld2;  
+               fibOld1=fibOld2;   
+               fibOld2=fib;  
+            end  
+        end  
+end  
+
  
