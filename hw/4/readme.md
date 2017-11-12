@@ -45,7 +45,7 @@ Question 1C:
             Convert(i)=(i*(9/5))+32;
     else 
         disp('error')
-            end
+            end  
     end
  
     
