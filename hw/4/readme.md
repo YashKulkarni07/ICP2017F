@@ -1,3 +1,58 @@
+Question 1A:  
+function Convert=ConvertTempFor(Invec,item)   
+Convert=length(Invec);     
+    if(strcmp(item,'C2F')==1)  
+        for i=1:length(Invec)  
+        Convert (i)=(i-32)*(5/9);  
+        end  
+        elseif(strcmp(item,'F2C')==1)  
+            for i=1:length(Invec)  
+            Convert(i)=(i*(9/5))+32;  
+            end  
+            else  
+                disp('Error');  
+            end  
+    end   
+        
+Question 1B:    
+function Convert = ConvertTempWhile(Invec,item)  
+Convert=length(Invec);     
+    if(strcmp(item,'C2F')==1)  
+        i=1;  
+        while i~=length(Invec)+1  
+        Convert (i)=(i-32)*(5/9);  
+        i=i+1;  
+        end  
+        elseif(strcmp(item,'F2C')==1)  
+            i=1;  
+           while i~=length(Invec)+1  
+            Convert(i)=(i*(9/5))+32;  
+            i=i+1;  
+            end  
+            else  
+                disp('Error');  
+            end  
+    end   
+    
+    Question 1C:
+    function Convert= convertTempVec(Invec,item)
+    Convert=length(Invec);  
+        if(strcmp(item,'C2F')==1)
+            i=1:length(Invec);  
+            Convert(i)=(i-32)*(5/9);
+        elseif (strcmp(item,'F2C')==1)  
+            i=1:length(Invec);
+            Convert(i)=(i*(9/5))+32;
+    else 
+        disp('error')
+            end
+    end
+    
+    Question 2:
+        
+
+
+
 
 
 
