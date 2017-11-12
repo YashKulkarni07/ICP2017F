@@ -33,8 +33,8 @@ Convert=length(Invec);
                 disp('Error');  
             end  
     end   
-    
-    Question 1C:
+ 
+Question 1C:
     function Convert= convertTempVec(Invec,item)
     Convert=length(Invec);  
         if(strcmp(item,'C2F')==1)
@@ -47,6 +47,7 @@ Convert=length(Invec);
         disp('error')
             end
     end
+ 
     
     Question 2:
         
