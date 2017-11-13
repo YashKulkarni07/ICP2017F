@@ -20,8 +20,14 @@ end
 end  
 
 Question 1c:  
-average runtime for getFacWHile(4): 0.000065 seconds
-getFacFor(4)
-average runtime for getFacFor(4): 0.000085 seconds.
-getFacVec(4)
-average runtime for getFacVec(4): .003441 seconds
+function Fac=getFacVec(n)  
+x=n:-1:1  
+Fac=prod(x);  
+end  
+
+Question 2:  
+average runtime for getFacWhile(4): 0.000065 seconds    
+getFacFor(4)  
+average runtime for getFacFor(4): 0.000085 seconds.  
+getFacVec(4)  
+average runtime for getFacVec(4): .003441 seconds  
