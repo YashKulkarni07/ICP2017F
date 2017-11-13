@@ -95,7 +95,7 @@ The code is taking an value of eps=1 and then adding that to 1. If 1+eps doesn't
 
 Question 6:  
 function LargestPrime=getLargestPrime(n)  
-    for i=n:-1:1  
+    for i=n: -1 :1  
         if(isprime(i))  
             LargestPrime=i;  
             break;  
