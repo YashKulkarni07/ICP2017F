@@ -1,18 +1,18 @@
 Question 1A:  
-function Convert=ConvertTempFor(Invec,item)   
-Convert=length(Invec);     
-    if(strcmp(item,'C2F')==1)  
-        for i=1:length(Invec)  
-        Convert (i)=(i-32)*(5/9);  
-        end  
-        elseif(strcmp(item,'F2C')==1)  
-            for i=1:length(Invec)  
-            Convert(i)=(i*(9/5))+32;  
-            end  
-            else  
-                disp('Error');  
-            end  
-    end   
+function Convert=ConvertTempFor(Invec,item) 
+Convert=zeros(1,length(Invec));
+    if(strcmp(item,'C2F')==1)
+        for i=1:length(Invec)
+        Convert(i)=(9/5)*Invec(i)+32;
+        end
+        elseif(strcmp(item,'F2C')==1)
+            for i=1:length(Invec)
+            Convert(i)=(5/9)*(Invec(i)-32);
+            end
+            else
+                disp('Error');
+            end
+    end 
         
 Question 1B:    
 function Convert = ConvertTempWhile(Invec,item)  
@@ -51,6 +51,13 @@ Question 1C:
     
     Question 2:
         
+tic, ConvertTempFor(input,'C2F'),toc
+
+ans =
+
+    -4     5    14    23    32    41    50    59    68    77    86    95   104
+
+Elapsed time is 0.001969 seconds.
 
 
 
