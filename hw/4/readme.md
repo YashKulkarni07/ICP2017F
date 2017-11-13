@@ -247,10 +247,10 @@ end
  
  Question 8b:    
   function WritefibResults()  
-n=1:35;  
-for i=1:n
-writetable(struct2table(Timefib(i)),'fibOutput.txt')
-writetable(struct2table(TimefibLoop(i)),'fibLoopOutput.txt')
+n=1:35;    
+for i=1:n  
+writetable(struct2table(Timefib(i)),'fibOutput.txt');   
+writetable(struct2table(TimefibLoop(i)),'fibLoopOutput.txt');    
 end  
 
 
