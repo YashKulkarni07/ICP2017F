@@ -200,14 +200,14 @@ Question 7c:
 The fibloop() function has a faster run time and is more efficient when compared to the fib() function. The huge difference in performance is caused by the fact that for loops have to do less work while recursive functions have to do multiple things to get the final answer.  
 
 Question 8a:
- function answer=Timefib(n)   
+ function output=Timefib(n)   
 n = input('Please enter a non-negative integer:');  
 if (~ischar(n)&&isreal(n)&&n>=0&&round(n)==n)  
     answer=struct;  
  f = @() getFib(n);  
- answer(1).n=n;  
- answer(1).fib=getFib(n);  
- answer(1).runtime=timeit(f);  
+ output(1).n=n;  
+ output(1).fib=getFib(n);  
+ output(1).runtime=timeit(f);  
 else  
     error('Invalid')  
 end  
@@ -223,14 +223,14 @@ end
 end  
 
 Question 8a:    
-function answer=TimefibLoop(n)     
+function output=TimefibLoop(n)     
 n = input('Please enter a non-negative integer:');    
 if (~ischar(n)&&isreal(n)&&n>=0&&round(n)==n)    
     answer=struct;    
  f = @() getFib(n);    
- answer(1).n=n;    
- answer(1).fib=getFib(n);    
- answer(1).runtime=timeit(f);    
+ output(1).n=n;    
+ output(1).fib=getFib(n);    
+ output(1).runtime=timeit(f);    
 else    
     error('Invalid')    
 end    
@@ -248,9 +248,9 @@ end
  Question 8b:    
   function WritefibResults()  
 n=1:35;  
-for i=1:n  
-writetable(struct2table(Timefib(i));  
-writetable(struct2table(TimeFibLoop(i));  
+for i=1:n
+writetable(struct2table(Timefib(i)),'fibOutput.txt')
+writetable(struct2table(TimefibLoop(i)),'fibLoopOutput.txt')
 end  
 
 
