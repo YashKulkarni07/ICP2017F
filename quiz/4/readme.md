@@ -20,14 +20,7 @@ end
 end  
 
 Question 1c:  
-function Fac=getFacVec(n)
-x=1:n
-prod(n);
-end
-
-Question 2:  
-getFac(4)
-average runtime for getFac(4): 0.000797 seconds.
+average runtime for getFacWHile(4): 0.000065 seconds
 getFacFor(4)
 average runtime for getFacFor(4): 0.000085 seconds.
 getFacVec(4)
