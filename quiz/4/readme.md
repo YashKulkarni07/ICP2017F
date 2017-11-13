@@ -13,7 +13,7 @@ Question 1b:
 function getFacFor(n)  
 NewN=n;  
 fac=n;   
-for i=n:-1:1    
+for i=n: -1:1    
 fac=fac*i;    
 end    
  disp([num2str(NewN),'! = ' num2str(fac)])  
@@ -21,7 +21,7 @@ end
 
 Question 1c:  
 function Fac=getFacVec(n)  
-x=n:-1:1  
+x=n: -1:1  
 Fac=prod(x);  
 end  
 
