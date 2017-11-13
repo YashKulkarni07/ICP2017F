@@ -15,37 +15,37 @@ Convert=zeros(1,length(Invec));
     end 
         
 Question 1B:    
-function Convert = ConvertTempWhile(Invec,item)  
-Convert=length(Invec);     
-    if(strcmp(item,'C2F')==1)  
-        i=1;  
-        while i~=length(Invec)+1  
-        Convert (i)=(i-32)*(5/9);  
-        i=i+1;  
-        end  
-        elseif(strcmp(item,'F2C')==1)  
-            i=1;  
-           while i~=length(Invec)+1  
-            Convert(i)=(i*(9/5))+32;  
-            i=i+1;  
-            end  
-            else  
-                disp('Error');  
-            end  
-    end   
+function Convert = ConvertTempWhile(Invec,item)
+Convert=zeros(1,length(Invec));
+if (strcmp(item,'C2F')==1)
+i=1;
+while i~=length(Invec)+1
+    Convert(i)=(9/5)*Invec(i)+32;
+    i=i+1;
+end
+ elseif(strcmp(item,'F2C')==1)
+     i=1;
+    while i~=length(Invec)
+    Convert(i)=(5/9)*(Invec(i)-32);
+    i=i+1;
+    end
+ else
+     Error('Invalid');
+end
+    end 
  
 Question 1C:
-    function Convert= convertTempVec(Invec,item)
-    Convert=length(Invec);  
+  function Convert= convertTempVec(Invec,item)
+  Convert=zeros(1,length(Invec));  
         if(strcmp(item,'C2F')==1)
             i=1:length(Invec);  
-            Convert(i)=(i-32)*(5/9);
+            Convert(i)=(9/5)*Invec(i)+32;
         elseif (strcmp(item,'F2C')==1)  
             i=1:length(Invec);
-            Convert(i)=(i*(9/5))+32;
+             Convert(i)=(5/9)*(Invec(i)-32);
     else 
         disp('error')
-            end  
+            end
     end
  
     
@@ -59,9 +59,21 @@ ans =
 
 Elapsed time is 0.001969 seconds.
 
+tic,ConvertTempWhile(input,'C2F'),toc
 
+ans =
 
+    -4     5    14    23    32    41    50    59    68    77    86    95   104
 
+Elapsed time is 0.033282 seconds.
+
+tic,ConvertTempVec(input,'C2F'),toc
+
+ans =
+
+    -4     5    14    23    32    41    50    59    68    77    86    95   104
+
+Elapsed time is 0.006259 seconds.
 
 
 Question 3:
@@ -156,5 +168,52 @@ end
 Question 7c:  
 The fibloop() function has a faster run time and is more efficient when compared to the fib() function. The huge difference in performance is caused by the fact that for loops have to do less work while recursive functions have to do multiple things to get the final answer.  
 
-Question 8
+Question 8a:
+ function answer=Timefib(n)   
+n = input('Please enter a non-negative integer:');  
+if (~ischar(n)&&isreal(n)&&n>=0&&round(n)==n)  
+    answer=struct;  
+ f = @() getFib(n);  
+ answer(1).n=n;  
+ answer(1).fib=getFib(n);  
+ answer(1).runtime=timeit(f);  
+else  
+    error('Invalid')  
+end  
+    function fib = getFib(n_int)  
+        if n_int == 0  
+            fib = 0;  
+        elseif n_int == 1  
+            fib = 1;  
+        else  
+            fib = getFib(n_int-1) + getFib(n_int-2);  
+        end  
+    end  
+end  
+
+Question 8a:    
+function answer=TimefibLoop(n)     
+n = input('Please enter a non-negative integer:');    
+if (~ischar(n)&&isreal(n)&&n>=0&&round(n)==n)    
+    answer=struct;    
+ f = @() getFib(n);    
+ answer(1).n=n;    
+ answer(1).fib=getFib(n);    
+ answer(1).runtime=timeit(f);    
+else    
+    error('Invalid')    
+end    
+    function fib = getFib(n_int)    
+        if n_int == 0    
+            fib = 0;    
+        elseif n_int == 1    
+            fib = 1;    
+        else    
+            fib = getFib(n_int-1) + getFib(n_int-2);    
+        end    
+    end    
+ end  
+ 
+ Question 8b:  
+  
  
