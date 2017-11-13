@@ -1,52 +1,52 @@
 Question 1A:  
-function Convert=ConvertTempFor(Invec,item) 
-Convert=zeros(1,length(Invec));
-    if(strcmp(item,'C2F')==1)
-        for i=1:length(Invec)
-        Convert(i)=(9/5)*Invec(i)+32;
-        end
-        elseif(strcmp(item,'F2C')==1)
-            for i=1:length(Invec)
-            Convert(i)=(5/9)*(Invec(i)-32);
-            end
-            else
-                disp('Error');
-            end
-    end 
+function Convert=ConvertTempFor(Invec,item)   
+Convert=zeros(1,length(Invec));  
+    if(strcmp(item,'C2F')==1)  
+        for i=1:length(Invec)  
+        Convert(i)=(9/5)*Invec(i)+32;  
+        end  
+        elseif(strcmp(item,'F2C')==1)  
+            for i=1:length(Invec)  
+            Convert(i)=(5/9)*(Invec(i)-32);  
+            end  
+            else  
+                disp('Error');  
+            end  
+    end   
         
-Question 1B:    
-function Convert = ConvertTempWhile(Invec,item)
-Convert=zeros(1,length(Invec));
-if (strcmp(item,'C2F')==1)
-i=1;
-while i~=length(Invec)+1
-    Convert(i)=(9/5)*Invec(i)+32;
-    i=i+1;
-end
- elseif(strcmp(item,'F2C')==1)
-     i=1;
-    while i~=length(Invec)
-    Convert(i)=(5/9)*(Invec(i)-32);
-    i=i+1;
-    end
- else
-     Error('Invalid');
-end
-    end 
+Question 1B:      
+function Convert = ConvertTempWhile(Invec,item)  
+Convert=zeros(1,length(Invec));  
+if (strcmp(item,'C2F')==1)  
+i=1;  
+while i~=length(Invec)+1  
+    Convert(i)=(9/5)*Invec(i)+32;  
+    i=i+1;  
+end  
+ elseif(strcmp(item,'F2C')==1)  
+     i=1;  
+    while i~=length(Invec)  
+    Convert(i)=(5/9)*(Invec(i)-32);  
+    i=i+1;  
+    end  
+ else  
+     Error('Invalid');  
+end  
+    end   
  
-Question 1C:
-  function Convert= convertTempVec(Invec,item)
-  Convert=zeros(1,length(Invec));  
-        if(strcmp(item,'C2F')==1)
+Question 1C:  
+  function Convert= convertTempVec(Invec,item)  
+  Convert=zeros(1,length(Invec));    
+        if(strcmp(item,'C2F')==1)  
+            i=1:length(Invec);    
+            Convert(i)=(9/5)*Invec(i)+32;  
+        elseif (strcmp(item,'F2C')==1)    
             i=1:length(Invec);  
-            Convert(i)=(9/5)*Invec(i)+32;
-        elseif (strcmp(item,'F2C')==1)  
-            i=1:length(Invec);
-             Convert(i)=(5/9)*(Invec(i)-32);
-    else 
-        disp('error')
-            end
-    end
+             Convert(i)=(5/9)*(Invec(i)-32);  
+    else   
+        disp('error')  
+            end  
+     end  
  
     
     Question 2:
