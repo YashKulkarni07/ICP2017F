@@ -13,3 +13,27 @@ for i=1:nstudetns/3
 end  
 xlswrite('nameTriples.xlsx',StudentTriple');  
 
+Question 2:  
+
+
+Question 3:    
+rng('shuffle');  
+nSample = 1000;  
+winCounter= 0;  
+oddsOfWin = zeros(nSample,1);  
+doors = [1,2,3];  
+for iSample = 2:nSample+1  
+doorWithCar = randi(3);  
+myChoice = randi(3);  
+HostChoice = doors(doors ~= doorWithCar);  
+HostChoice = HostChoice(HostChoice ~= myChoice);  
+HostChoice = HostChoice(randi(length(HostChoice)));  
+if myChoice==doorWithCar  
+    winCounter = winCounter+1;  
+    oddsOfWin(iSample)= winCounter/iSample;  
+else  
+    oddsOfWin(iSample)=oddsOfWin(iSample-1);  
+end  
+disp(['odds wins by NOT switching:',num2str(oddsOfWin(iSample))]);   
+end  
+plot(oddsOfWin);  
