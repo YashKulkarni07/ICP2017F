@@ -8,5 +8,8 @@ try
 catch  
     disp('The requested web address does not exist! Gracefully existing...');  
 
+Question 3:  
+gca:  gca refers to the current active plot in the correct active figure.    
+gcf: gcf refers to the current active figure handle.  
 
 
