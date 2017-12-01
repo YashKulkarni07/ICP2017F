@@ -96,4 +96,31 @@ else
 end  
 disp(['odds wins by NOT switching:',num2str(oddsOfWin(iSample))]);   
 end  
-plot(oddsOfWin);  
+plot(oddsOfWin); 
+
+Question 4:  
+function approximation()    
+prompt='How many n terms?';  
+n=input(prompt);  
+a=rand(n,2);  
+circle=zeros(n,2);  
+m=1;  
+for i=1:n  
+    d=sqrt(a(i,1)^2+a(i,2)^2);  
+  if(d<=1)  
+        circle(m,1)=a(i,1);  
+        circle(m,2)=a(i,2);  
+        m=m+1;  
+  end  
+end  
+
+
+circle=circle(1:m,1:2);  
+disp(['pi is:', num2str(4*length(circle)/(n))]);  
+scatter(circle(:,1),circle(:,2),3);  
+hold on  
+xlabel('number of points');  
+ylabel('estimate of pi');  
+hold off    
+end  
+    
