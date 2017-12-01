@@ -18,6 +18,7 @@ try
     webcontent=webread(x);  
 catch  
     disp('The requested web address does not exist! Gracefully existing...');  
+end  
 
 Question 3:  
 gca:  gca refers to the current active plot in the correct active figure.    
