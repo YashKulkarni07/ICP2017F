@@ -16,12 +16,22 @@ Slice=data(:,:,sliceNumber);
         hold off  
 
 Question 2:  
-
-
-
-
-
-
+%Use in relation to the script provided in 1
+load('cells.mat');  
+BinaryData=cells;  
+BinaryData(BinaryData~=0)=1;  
+imagesc(BinaryData(:,:Slice));  
+BCell=bwboundaries(BinaryData(:,:,Slice));  
+hold on  
+error=0;  
+for iobject=1:length(BCell)  
+    plot(BCell{iobject}(:,2),BCell{iobject}(:,1)...  
+        ,'linewidth',7 ...  
+        ,'color', 'red' ...  
+        );  
+end  
+    error=error+sum(cells(BCell{iobject}(:,2), cells(BCell{iobject}(:,1))));  
+    data(BCell{1}(1,2),BCell{1}(40,1),Slice);        
 
 Question 3:  
 function totalLogProb=getTotalLogProb(Param)  
