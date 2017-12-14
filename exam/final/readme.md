@@ -1,4 +1,4 @@
-This is final folder
+This is the folder for the final
 
 Overall:    
   data = contains the input data for this project   
