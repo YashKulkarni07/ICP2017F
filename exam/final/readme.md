@@ -5,11 +5,11 @@ Overall:
   src = contains all of the codes written for this project    
   results = contains all the results generated our code   
 
-Data reduction and visualization:
+Data reduction and visualization:   
    
   
-Obtaining the error in tumor cell count:
+Obtaining the error in tumor cell count:    
   
 
-The mathematical model of tumor growth:
+The mathematical model of tumor growth:   
   
