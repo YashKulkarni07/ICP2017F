@@ -2,7 +2,7 @@
 **Name**: Yash Kulkarni  
 **UT EID**: yk7278  
 **Email**: kulkarni.yash08@gmail.com  
-**Department**:[Department of Mechanical Engineering](http://www.ae.utexas.edu/)  
+**Department**:[Department of Mechanical Engineering](https://www.me.utexas.edu/)  
 **University**:[The University of Texas at Austin](https://www.utexas.edu/)  
 **level**:Undergraduate-Freshmen(1st year)  
 **ICP Class Position**: Student  
